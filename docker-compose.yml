@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  emyay:
+    build:
+      context: .
+    image: emyay
+    restart: always
+    tty: true
+    volumes:
+      - .:/usr/local/src/emyay
